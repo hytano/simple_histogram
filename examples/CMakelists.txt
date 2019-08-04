@@ -14,8 +14,8 @@ set(EXAMPLE_TARGET_PREFIX examples)
 set(EX_NAME ${EXAMPLE_TARGET_PREFIX}_getting_started)
 add_executable(${EX_NAME} ${GETTING_STARTED} )
 	
-target_include_directories(${EX_NAME} PUBLIC ${CONAN_INCLUDE_DIRS} "${CMAKE_CURRENT_LIST_DIR}/../include")
-target_link_libraries(${EX_NAME} CONAN_PKG::fmt CONAN_PKG::boost ${Boost_LIBRARIES})
+target_include_directories(${EX_NAME} PUBLIC ${CONAN_INCLUDE_DIRS} ${CONAN_INCLUDE_DIRS_JSONFORMODERNCPP} "${CMAKE_CURRENT_LIST_DIR}/../include")
+target_link_libraries(${EX_NAME} CONAN_PKG::fmt CONAN_PKG::boost CONAN_PKG::jsonformoderncpp ${Boost_LIBRARIES})
  
 # IF(WIN32) # Check if we are on Windows
   # if(MSVC) # Check if we are using the Visual Studio compiler

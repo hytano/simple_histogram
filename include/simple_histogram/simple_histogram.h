@@ -1,5 +1,9 @@
+#ifndef __SIMPLE_HISTOGRAM_H__
+#define __SIMPLE_HISTOGRAM_H__
+
 #include <boost/histogram.hpp>
 
+#include <string>
 #include <vector>
 
 namespace histogrammer {
@@ -9,9 +13,9 @@ namespace histogrammer {
 		template<typename DT>
 		struct bin_data_t {
 			int bin_index;
-			DT bin_lower;
-			DT bin_upper;
-			int value;
+			DT  bin_lower;
+			DT  bin_upper;
+			DT  value;
 		};
 
 		simple_histogram(int bins, T start, T stop) {
@@ -65,3 +69,4 @@ namespace histogrammer {
 	};
 }; // namespace histrogrammer
 
+#endif /*__SIMPLE_HISTOGRAM_H__*/

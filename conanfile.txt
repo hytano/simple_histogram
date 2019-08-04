@@ -1,6 +1,6 @@
 [requires]
 boost/1.70.0@conan/stable
-jsonformoderncpp/3.4.0@vthiery/stable
+jsonformoderncpp/3.5.0@vthiery/stable
 catch2/2.2.1@bincrafters/stable
 fmt/5.3.0@bincrafters/stable
 

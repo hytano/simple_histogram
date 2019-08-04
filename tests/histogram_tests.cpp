@@ -30,3 +30,4 @@ SCENARIO("Sampled data can be analyzed using histograms", "[sample_count]") {
 		}
 	}
 }
+
