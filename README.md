@@ -1,2 +1,8 @@
 # simple_histogram
-Very basic histogram with focus on ease of use
+
+A small library for some easy to use historgrams based on Boost.Histogram.
+
+The purpose of this project is mainly for playing around with
+* boost::histogram
+* fmt
+* catch2
